@@ -8,9 +8,19 @@
     <asp:ContentPlaceHolder ID="Cabecalho" runat="server">
     </asp:ContentPlaceHolder>
     <title></title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
 </head>
 <body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
     <form id="form1" runat="server">
+
+        <div class="hero-unit">
+            <h1>Gestão de Tarefas</h1>
+        </div>
+        
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolderCorpo" runat="server">
         
