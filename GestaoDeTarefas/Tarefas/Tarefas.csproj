@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="banco\Sql.txt" />
     <Content Include="bootstrap\css\bootstrap-responsive.css" />
     <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
     <Content Include="bootstrap\css\bootstrap.css" />
