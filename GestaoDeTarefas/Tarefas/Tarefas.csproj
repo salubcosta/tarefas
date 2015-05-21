@@ -67,6 +67,7 @@
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="Default.aspx" />
+    <Content Include="estilo\estilo.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

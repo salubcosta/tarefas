@@ -1,0 +1,14 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+    font-family:'Trebuchet MS',Arial;
+    font-size:12px;
+}
+
+.formAcesso {
+    margin:50px auto;
+    border:1px solid #dedddd;
+    border-radius:5px;
+    width: 300px;
+    padding:5px;
+}
