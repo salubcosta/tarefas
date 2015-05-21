@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="banco\Sql.txt" />
+    <Content Include="banco\SQLQuery.sql" />
     <Content Include="bootstrap\css\bootstrap-responsive.css" />
     <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
     <Content Include="bootstrap\css\bootstrap.css" />
