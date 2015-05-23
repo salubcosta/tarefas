@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="Tarefas.Views.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <asp:ContentPlaceHolder ID="cabecalho" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
+                <!--Menu começa aqui-->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <!--Conteúdo do menu-->
+                        <div class="container">
+
+                            <!--Menu embutido-->
+                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </a>
+
+                            <!--Esta informação não ficará escondida!-->
+                            <asp:HyperLink runat="server" ID="hplInicio" CssClass="brand" NavigateUrl="#" ToolTip="Página Inicial">
+                            <span class="icon-home"></span> Início
+                            </asp:HyperLink>
+
+                            <!--Os links abaixo ficarão escondidos-->
+                            <div class="nav-collapse collapse">
+                                <ul class="nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastros
+                                        <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><span class="icon-user"></span>Colaborador</a></li>
+                                            <li><a href="#"><span class="icon-tasks"></span>Tarefas</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--Menu termina aqui-->
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderCorpo" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

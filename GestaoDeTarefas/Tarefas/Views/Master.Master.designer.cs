@@ -10,7 +10,7 @@
 namespace Tarefas.Views {
     
     
-    public partial class Default {
+    public partial class Master {
         
         /// <summary>
         /// cabecalho control.
