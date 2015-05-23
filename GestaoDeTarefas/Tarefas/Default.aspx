@@ -15,7 +15,7 @@
                 <asp:TextBox runat="server" ID="lbSenha" Text="" TextMode="Password" PlaceHolder="Informe sua Senha"></asp:TextBox>
             </label>
 
-            <asp:Button runat="server" ID="btAcessar" Text="Acessar" CssClass="btn btn-success btn-large" />
+            <asp:Button runat="server" ID="btAcessar" Text="Acessar" CssClass="btn btn-primary btn-success" />
         </div>
     
 </asp:Content>

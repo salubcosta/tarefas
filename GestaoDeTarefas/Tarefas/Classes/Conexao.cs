@@ -30,9 +30,9 @@ namespace Tarefas.Classes
                 {
                     this.con.Open();
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
-                    throw new NotImplementedException();
+                    throw new Exception("Ocorreu um erro ao tentar abrir a conexão. \nDetalhe do erro: " + e.Message);
                 }
             }
             return this.con;
