@@ -57,20 +57,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="banco\SQLQuery.sql" />
-    <Content Include="bootstrap\css\bootstrap-responsive.css" />
-    <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
-    <Content Include="bootstrap\css\bootstrap.css" />
-    <Content Include="bootstrap\css\bootstrap.min.css" />
-    <Content Include="bootstrap\img\glyphicons-halflings-white.png" />
-    <Content Include="bootstrap\img\glyphicons-halflings.png" />
-    <Content Include="bootstrap\js\bootstrap.js" />
-    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="Banco\SQLQuery.sql" />
+    <Content Include="Bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="Bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="Bootstrap\css\bootstrap.css" />
+    <Content Include="Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="Bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="Bootstrap\js\bootstrap.js" />
+    <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Default.aspx" />
-    <Content Include="estilo\estilo.css" />
+    <Content Include="Estilo\estilo.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Conexao.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -78,6 +79,8 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Inteface\IConexao.cs" />
+    <Compile Include="Inteface\IDAO.cs" />
     <Compile Include="MasterAcesso.Master.cs">
       <DependentUpon>MasterAcesso.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,6 +98,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
